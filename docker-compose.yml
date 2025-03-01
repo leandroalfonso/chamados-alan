@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  # Serviço do PHP
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_app
+    restart: always
+    volumes:
+      - .:/var/www/html                  # Mapeia a pasta local para o diretório do Apache
+    ports:
+      - "80:80"                          # Mudando para porta 80
+    networks:
+      - app-network
+
+# Rede para comunicação entre os containers
+networks:
+  app-network:
+    driver: bridge
