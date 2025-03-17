@@ -264,7 +264,7 @@ CREATE TABLE `notificacoes` (
   `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `data_leitura` timestamp NULL DEFAULT NULL,
   `id_referencia` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Despejando dados para a tabela `notificacoes`
@@ -295,7 +295,7 @@ CREATE TABLE `solicitacoes_reabertura` (
   `data_solicitacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `data_resposta` timestamp NULL DEFAULT NULL,
   `id_responsavel` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Despejando dados para a tabela `solicitacoes_reabertura`
