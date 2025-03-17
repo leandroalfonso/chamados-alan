@@ -1,0 +1,84 @@
+/* Estilos para as abas de filtros */
+.nav-tabs .nav-link {
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* Estilos para os botões de filtro */
+.btn-group-vertical .btn {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2px;
+    border-radius: 4px !important;
+}
+
+.btn-group-vertical .btn:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para a lista de filtros salvos */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item h6 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* Estilos para os botões de ação */
+.btn .material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Estilos para o estado vazio */
+.text-muted .material-symbols-outlined {
+    opacity: 0.5;
+}
+
+/* Animações */
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
